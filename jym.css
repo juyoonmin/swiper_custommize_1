@@ -2,23 +2,25 @@
     height: 500px;
     background-color: black;
 }
-#banner .swiper-slide{
+#banner.pc_slide-initialized .swiper-slide{
     transition: 0.5s;
     opacity: 0.5;
     position: relative;
 }
-#banner .swiper-slide-active,
-#banner .swiper-slide-duplicate-active{
+#banner.pc_slide-initialized .swiper-slide-active,
+#banner.pc_slide-initialized .swiper-slide-duplicate-active{
     opacity: 1;
     z-index: 1000;
     overflow: visible;
+    
 }
-#banner .swiper-slide-active div,
-#banner .swiper-slide-duplicate-active div{
-    width: 1440px;
-    position: absolute;
-    top: 0; height: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: white;
+
+#banner.pc_slide-initialized .swiper-slide-active div,
+#banner.pc_slide-initialized .swiper-slide-duplicate-active div{
+            width:80vw;
+            position: absolute;
+            top:0; height: 100%;
+            left:50%;
+            transform: translateX(-50%);
+            background-color: white;
 }
